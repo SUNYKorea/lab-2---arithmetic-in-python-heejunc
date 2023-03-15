@@ -7,7 +7,7 @@ def add(x, y):
 #       return the square root of the given number. 
 
 def neg(x):
-    ... # fill here
+    x = x -1 # fill here
 
 def sqrt(x):
     ... # fill here
