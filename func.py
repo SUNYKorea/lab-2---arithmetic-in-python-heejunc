@@ -2,15 +2,29 @@
 def add(x, y):
     return x + y
 
+
 # TODO: Add definitions of sub(), div(), mult(), exp(), as well as neg() and sqrt().
 #       neg() should return the negation of the given number, and sqrt() should
 #       return the square root of the given number. 
 
 def neg(x):
-    x = x -1 # fill here
+    return -x # fill here
 
 def sqrt(x):
-    x**2 # fill here
+    return x**(1/2)
+
+def sub(x, y):
+    return x - y
+
+def div(x, y):
+    return x/y
+
+def mult(x, y):
+    return x*y
+
+def exp(x):
+    return x**2
+
 
 # -------------------------------------- Task 2 -----------------------------------
 
@@ -20,9 +34,10 @@ def sqrt(x):
 a = 1
 b = -3
 c = 1
+d = sub(exp(b), mult(4, mult(a, c)))
+x1 = div(add(neg(b),sqrt(d)), mult(2,a)) # TODO: write a code to compute the first root of the quadratic equation
 
-x1 = ... # TODO: write a code to compute the first root of the quadratic equation
-x2 = ... # TODO: then do the same for the second root
+x2 = div(sub(neg(b),sqrt(d)), mult(2,a)) # TODO: then do the same for the second root
 # Note: Make sure to remove the ellipsis (...) when you're writing your code
 
 print("First root:" + str(x1))
